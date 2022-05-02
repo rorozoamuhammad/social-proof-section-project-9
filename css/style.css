@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15px;
+    overflow: hidden;
+    font-family: 'League Spartan', sans-serif;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.bottom {
+    position: absolute;
+    right: 0;
+    top: 20vh;
+}
+.bottomMobile {
+    position: absolute;
+    right: 0;
+    bottom: -100vh;
+    display: none;
+}
+.top {
+    position: absolute;
+}
+.topMobile {
+    position: absolute;
+    display: none;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 80vmax;
+    margin: 15vh auto;
+}
+header {
+    width: 80vmax;
+    display: grid;
+    grid-template-areas: 
+        "txt rating"
+    ;
+    margin-bottom: 10vh;
+}
+.txt {
+    grid-area: txt;
+    width: 40vmax;
+}
+.txt h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+.txt p {
+    margin-top: 3vh;
+    font-size: 1.5em;
+    color: hsl(303, 10%, 53%);
+    font-weight: 400;
+}
+
+.rating {
+    grid-area: rating;
+    width: 40vmax;
+    padding-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.pertama {
+    width: 30vmax;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1.1em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+.pertama img {
+    padding-right: 1em;
+}
+.pertama p {
+    color: hsl(300, 43%, 22%);
+    margin-left: 2em;
+}
+
+.kedua {
+    width: 30vmax;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1.1em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    margin-left: 5vw;
+}
+.kedua img {
+    padding-right: 1em;
+}
+.kedua p {
+    color: hsl(300, 43%, 22%);
+    margin-left: 1em;
+}
+
+.ketiga {
+    width: 30vmax;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1.1em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+}
+.ketiga img {
+    padding-right: 1em;
+}
+.ketiga p {
+    color: hsl(300, 43%, 22%);
+    margin-left: 2em;
+}
+
+.main {
+    display: flex;
+    width: 90vmax;
+}
+.kolomOne {
+    width: 20vmax;
+    height: 23vh;
+    background-color: hsl(300, 43%, 22%);
+    padding: 2em;
+    border-radius: 10px;
+    margin-right: 4.5em;
+}
+.kolomOne .atas {
+    display: flex;
+    margin-bottom: 3vh;
+}
+.kolomOne .atas img {
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+}
+.kolomOne .atas .data {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.kolomOne .atas .data h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.kolomOne .atas .data p {
+    color: hsl(333, 80%, 67%);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.kolomOne .bawah {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1em;
+}
+
+
+.kolomTwo {
+    width: 20vmax;
+    height: 23vh;
+    background-color: hsl(300, 43%, 22%);
+    padding: 2em;
+    border-radius: 10px;
+    margin-right: 4.5em;
+    margin-top: 1.5em;
+}
+.kolomTwo .atas {
+    display: flex;
+    margin-bottom: 3vh;
+}
+.kolomTwo .atas img {
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+}
+.kolomTwo .atas .data {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.kolomTwo .atas .data h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.kolomTwo .atas .data p {
+    color: hsl(333, 80%, 67%);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.kolomTwo p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1em;
+}
+
+.kolomThree {
+    width: 20vmax;
+    height: 23vh;
+    background-color: hsl(300, 43%, 22%);
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 2.5em;
+}
+.kolomThree .atas {
+    display: flex;
+    margin-bottom: 3vh;
+}
+.kolomThree .atas img {
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+}
+.kolomThree .atas .data {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.kolomThree .atas .data h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.kolomThree .atas .data p {
+    color: hsl(333, 80%, 67%);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.kolomThree p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .top, 
+    .bottom {
+        display: none;
+    }
+    .topMobile,
+    .bottomMobile {
+        display: block;
+    }
+    .container {
+        width: 50vmax;
+        text-align: center;
+        margin: 10vh auto;
+    }
+    header {
+        width: 50vmax;
+        grid-template-areas: 
+            "txt"
+            "rating"
+        ;
+        margin: auto;
+    }
+    .txt {
+        width: 50vmax;
+    }
+    .txt h1 {
+        font-size: 3em;
+    }
+    .txt p {
+        margin-bottom: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .rating {
+        width: 50vmax;
+    }
+    .icon {
+        margin-bottom: 1.1em;
+    }
+    .pertama {
+        width: 50vmax;
+        flex-direction: column;
+    }
+    .pertama p {
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.3em;
+    }
+    .kedua {
+        width: 50vmax;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .kedua p {
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.3em;
+    }
+    .ketiga {
+        width: 50vmax;
+        margin-left: 0;
+        margin-bottom: 2em;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .ketiga p {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .main {
+        width: 100vmax;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .kolomOne {
+        width: 45vmax;
+        height: auto;
+        margin-right: 0;
+    }
+    .kolomTwo {
+        width: 45vmax;
+        height: auto;
+        margin-right: 0;
+        margin-top: 5vh;
+    }
+    .kolomThree {
+        width: 45vmax;
+        height: auto;
+        margin-right: 0;
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        width: 45vmax;
+    }
+    header {
+        width: 45vmax;
+    }
+    .txt {
+        width: 45vmax;
+        margin: auto;
+    }
+    .rating {
+        width: 45vmax;
+        margin: auto;
+    }
+    .pertama {
+        width: 45vmax;
+    }
+    .kedua {
+        width: 45vmax;
+    }
+    .ketiga {
+        width: 45vmax;
+    }
+    .main {
+        width: 90vw;
+    }
+    .kolomOne {
+        width: 68vw;
+    }
+    .kolomTwo {
+        width: 68vw;
+    }
+    .kolomThree {
+        width: 68vw;
+    }
+}
